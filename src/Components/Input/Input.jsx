@@ -42,7 +42,7 @@ const Input = () => {
         onKeyPress={getSearchData}
         onChange={(e) => setSearch(e.target.value)}
       />
-      <button className={styles.SearchButton}>
+      <button onClick={getSearchData} className={styles.SearchButton}>
         <p className={styles.ButtonText}>Search</p>
       </button>
     </motion.div>

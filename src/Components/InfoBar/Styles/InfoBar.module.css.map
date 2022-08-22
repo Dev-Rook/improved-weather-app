@@ -1,1 +1,1 @@
-{"version":3,"sources":["InfoBar.module.scss","InfoBar.module.css"],"names":[],"mappings":"AAGA;EACI,uHAAA;EACA,oCAAA;EACA,aAAA;EAEA,aAAA;EACA,8BAAA;EACA,mBAAA;EAEA,YAAA;EACA,kBAAA;EAEA,UAAA;ACLJ","file":"InfoBar.module.css"}
+{"version":3,"sources":["InfoBar.module.scss","InfoBar.module.css"],"names":[],"mappings":"AAGA;EACI,uHAAA;EACA,oCAAA;EACA,aAAA;EAEA,aAAA;EACA,8BAAA;EACA,mBAAA;EAEA,YAAA;EACA,kBAAA;EAEA,WAAA;ACLJ","file":"InfoBar.module.css"}
