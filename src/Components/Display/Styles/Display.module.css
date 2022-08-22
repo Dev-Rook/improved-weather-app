@@ -1,14 +1,14 @@
 .GeneralDataBox {
-  border: 1px solid white;
   display: flex;
   position: relative;
   padding: 10px;
+  justify-content: space-between;
   align-items: center;
+  overflow: hidden;
   margin: auto;
   width: 100%;
 }
 .GeneralDataBox .ConTempLatLon {
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -46,6 +46,6 @@
   font-size: 30px;
   font-weight: 400;
   position: absolute;
-  right: -70px;
+  right: -40px;
   transform: rotate(-90deg);
 }/*# sourceMappingURL=Display.module.css.map */

@@ -12,9 +12,9 @@ const Dashboard = () => {
   const [search, setSearch] = useState("");
   const [searchData, setSearchData] = useState({});
 
-  // 3681b5eb2ec63fa08c198f554c4f3fc2
+  // 3681b5eb2ec63fa08c198f554c4f3fc2 
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=3681b5eb2ec63fa08c198f554c4f3fc2`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=3681b5eb2ec63fa08c198f554c4f3fc2&units=metric`;
 
   const getSearchData = (e) => {
     if (e.key === "Enter") {
