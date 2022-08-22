@@ -1,6 +1,7 @@
 
 
 .GeneralDataBox{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     display: flex;
 
     position: relative;
@@ -12,6 +13,7 @@
 
     margin: auto;
 
+    height: 230px;
     width: 100%;
 
     .ConTempLatLon {
@@ -40,6 +42,8 @@
             font-family: sans-serif;
             font-size: 100px;
             font-weight: 400;
+
+            transition: .5s;
         }
     
         .LatLon {
@@ -65,5 +69,34 @@
         right: -40px;
 
         transform: rotate(-90deg);
+    }
+    
+}
+@media only screen and (max-width: 560px) {
+    .GeneralDataBox {
+        .ConTempLatLon {
+
+            .Temperature {
+                font-size: 80px;
+            }
+        }
+
+        .Description {
+            font-size: 25px;
+        }
+    }
+}
+@media only screen and (max-width: 380px) {
+    .GeneralDataBox {
+        .ConTempLatLon {
+
+            .Temperature {
+                font-size: 70px;
+            }
+        }
+
+        .Description {
+            font-size: 20px;
+        }
     }
 }

@@ -60,11 +60,34 @@ const descriptionVariants = {
   },
 };
 
+const dataBoxVariants = {
+    hidden: {
+      opacity: 0,
+      zIndex: -1,
+    },
+  
+    visible: {
+      opacity: 1,
+      zIndex: 1,
+      // boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;",
+  
+      transition: {
+        duration: 1,
+        delay: 1.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
 const Display = () => {
   const { searchData } = useContext(GlobalContext);
 
   return (
-    <div className={styles.GeneralDataBox}>
+    <motion.div className={styles.GeneralDataBox}
+        variants={dataBoxVariants}
+        initial="hidden"
+        animate="visible"
+    >
       <div className={styles.ConTempLatLon}>
         <motion.span
           variants={span1Variants}
@@ -100,14 +123,14 @@ const Display = () => {
       {searchData.weather ? (
         <motion.h1
           className={styles.Description}
-          variants={descriptionVariants}
-          initial="hidden"
-          animate="visible"
+        //   variants={descriptionVariants}
+        //   initial="hidden"
+        //   animate="visible"
         >
           {searchData.weather[0].description}
         </motion.h1>
       ) : null}
-    </div>
+    </motion.div>
   );
 };
 

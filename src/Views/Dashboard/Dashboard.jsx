@@ -6,6 +6,7 @@ import { GlobalContext } from "../../Context/GlobalContext";
 
 import Input from "../../Components/Input/Input";
 import Display from "../../Components/Display/Display";
+import Map from "../../Components/Map/Map";
 import InfoBar from "../../Components/InfoBar/InfoBar";
 
 const Dashboard = () => {
@@ -22,9 +23,9 @@ const Dashboard = () => {
         console.log({ search });
         setSearchData(res.data);
         console.log(res.data)
-      });
+    });
+    setSearch(" ")
     }
-    setSearch("")
   };
 
   return (
@@ -32,6 +33,7 @@ const Dashboard = () => {
       <GlobalContext.Provider value={{setSearch, setSearchData, getSearchData, searchData}}>
         <Input />
         <Display />
+        <Map />
         <InfoBar />
       </GlobalContext.Provider>
     </div>
